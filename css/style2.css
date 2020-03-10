@@ -1,0 +1,113 @@
+/*Style para o Execício 2*/
+
+/*style para label*/
+label{
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   color: rgb(93, 199, 235);
+}
+
+/*style para h2*/
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    color: white;
+}
+
+/*style para palavras*/
+.palavra{
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+/*style para header*/
+header{
+    border: 2px cornflowerblue solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*botão*/
+.botao{
+    border: springgreen;
+    border-style: outset;
+    border-radius: 10px;
+    background-color: rgb(50, 184, 50);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 3px dimgray ;
+}
+
+.botao:hover{
+    background-color: forestgreen;
+    cursor: pointer;
+}
+
+.botao:active{
+    background-color: forestgreen;
+    transform: translateY(2px);
+    box-shadow: 0px 1px;
+}
+
+/*imagem de fundo*/
+input{
+    border-style: inset;
+    border-radius: 5px;
+    border-color: lightblue;
+}
+
+.imagem{
+    background-image: url('../imagem/degrade.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.imagem2{
+    background-image: url('../imagem/degrade2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagem3{
+    background-image: url('../imagem/degrade3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*efeito na página*/
+html{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/*linha horizontal*/
+hr{
+    background-color: turquoise;
+    border-radius: 5px;
+    animation-name: colorChange;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+/*animation*/
+@keyframes fade{
+    from{
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange{
+    from{
+        background-color: turquoise;
+        border-color: turquoise;
+    }
+    to{
+        background-color: blue;
+        border-color: blue;
+    }
+}

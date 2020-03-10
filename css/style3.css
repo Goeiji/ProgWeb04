@@ -1,0 +1,92 @@
+/*style aplicado no exercicio 3*/
+
+/*style para background*/
+.fundo{
+    background-image: url('../imagem/fundo.jpg');
+    background-repeat: repeat;
+    background-size: 1400px 900px;
+}
+
+/*style para palavras*/
+.palavra{
+    color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: cyan 0px -1px;
+}
+
+/*style para linha horizontal*/
+hr{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: skyblue;
+}
+
+/*style para entradas*/
+input{
+    border: 2px inset rgb(109, 209, 255);
+    border-radius: 5px;
+    background-color: rgb(212, 239, 255);
+    text-align: center;
+}
+
+/*style para botões*/
+button{
+    border: 5px solid skyblue;
+    border-radius: 10px;
+    border-style: outset;
+    box-shadow: skyblue 0px 2px
+}
+
+/*ao passar o mouse por cima o botão assume este estado*/
+button:hover{
+    cursor: pointer;
+    border-color: royalblue;
+}
+
+/*ao clicar o botão assume este estado*/
+button:active{
+    box-shadow: 0px 0px;
+    transform: translateY(2px);
+}
+
+/*remove a linha azul que se forma depois do clique*/
+button:focus{
+    outline: 0px;
+}
+
+/*style para a exibição do resultao*/
+.result{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(112, 34, 177);
+    border-radius: 7px;
+    width: 300px;
+    background-color: rgb(212, 239, 255);
+    text-align: center;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+/*borda externa com linha degrade*/
+.border{
+    display: grid;
+    border-radius: 3px;
+    padding: 5px;
+    background: linear-gradient(royalblue, skyblue);
+    width: 300px;
+}
+
+/*style para html*/
+html{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+/*animation*/
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}

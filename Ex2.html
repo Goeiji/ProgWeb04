@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style2.css">
+    <script type="text/javascript" src="js/velocidade.js"></script>
+    <title>Exercício 2</title>
+</head>
+<header class="imagem2">
+    <table width=100%>
+        <tr>
+            <td width=50%>
+                <h1 class="palavra">Controle de Velocidade<br>Programa Verifica Velocidade</h1>
+            </td>
+            <td>
+                <img src="imagem/sonic.png" alt="duvida" width="115" height="150">
+            </td>
+        </tr>
+    </table>
+</header>
+<hr size="5" class="hr">
+<body class="imagem3">
+    <div style="text-align: center;" class="imagem">
+        <div>
+            <br>
+            <label for="vel">Velocidade Permitida:</label>
+            <br>
+            <input type="text" name="vel" id="vel" autofocus style="width: 200px;">
+            <br>
+            <br>
+            <label for="velCond">Velocidade do Condutor:</label>
+            <br>
+            <input type="text" name="velCond" id="velCond" style="width: 200px;">
+            <br>
+            <br>
+            <br>
+            <button class="botao" name="verificar" id="verificar" onclick="calcular()">Verificar Velocidade</button>
+            <br>
+            <h2>Resultado:</h2>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <h1 style="color: green; text-shadow: white 0px 1px;" class="palavra" id="resultado"></h1>
+    </div>
+</body>
+</html>

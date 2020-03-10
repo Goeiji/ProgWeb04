@@ -1,0 +1,33 @@
+/*animação no label*/
+label{
+    color: rgb(93, 198, 224);
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: colorChange;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.resultado{
+    color: lightblue;
+    font-size: medium;
+    background: linear-gradient(royalblue,darkviolet);
+    border-radius: 10px;
+    text-align: center;
+}
+
+@keyframes colorChange{
+    0%{
+        color: rgb(93, 198, 224);
+    }
+    25%{
+        color: blue;
+    }
+    50%{
+        color: darkviolet;
+    }
+    100%{
+        color: crimson;
+    }
+}
